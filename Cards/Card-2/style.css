@@ -1,0 +1,106 @@
+body{
+background-color: black;
+padding: 0;
+margin: 0;
+
+}
+.card{
+    position: absolute;
+    top:10%;
+    left: 30%;
+   height: 30rem;
+   width: 20rem;
+   background-color: crimson;
+   padding: 0;
+   
+   
+   align-items: flex-end;
+
+
+}
+.card:nth-child(1)
+{
+    position: absolute;
+    top:10%;
+    left: 5%;
+   height: 30rem;
+   width: 20rem;
+   background-color: crimson;
+   padding: 0;
+   
+   
+   align-items: flex-end;
+
+}
+.card:nth-child(3)
+{
+    position: absolute;
+    top:10%;
+    left: 55%;
+   height: 30rem;
+   width: 20rem;
+   background-color: crimson;
+   padding: 0;
+   
+   
+   align-items: flex-end;
+
+}
+.img,img {
+    width: 20rem;
+    height: 30rem;
+    position: absolute;
+    display:flex;
+    transition: 0.4s;
+
+}
+img:hover{
+    height: 25rem;
+transition: 0.4s;
+border-bottom: 1px solid white ;
+}
+img::before{
+    transition: 0.4s;
+}
+h3{
+    display: inline-flex;
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    color: white;  
+    visibility: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*background: rgb(255,255,255);
+background: linear-gradient(-45deg, rgba(255,255,255,1) 50%, rgba(220, 20, 60) 50%);*/
+
+span{
+ transform: rotate(45deg);
+    padding: 10px;
+    background: rgb(220,20,60);
+    background: linear-gradient(-45deg, rgba(255,255,255,1,0) 50%, rgba(220, 20, 60,1) 50%);
+
+    position: absolute;
+    display: inline-flex;
+    top: 81.2%;
+    left: 50%;
+    visibility: hidden;
+   
+}
+span:hover{
+     background: rgb(255,255,255);
+    background: linear-gradient(-45deg, rgba(255,255,255,1,0) 50%, rgba(220, 20, 60,1) 50%);
+
+}
+.card :hover span{
+   rotate: 90deg;
+        background: rgb(255,255,255);
+        background: linear-gradient(-45deg, rgba(255,255,255,1,0) 50%, rgba(220, 20, 60,1) 50%);
+   
+}
+.card:hover  h3 ,span{
+    transition: 0.8s;
+    visibility: visible;
+   
+   
+}
