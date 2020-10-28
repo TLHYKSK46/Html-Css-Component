@@ -12,12 +12,12 @@ margin: 0;
    width: 20rem;
    background-color: crimson;
    padding: 0;
-   
-   
-   align-items: flex-end;
+   border-radius: 10px;
+
 
 
 }
+
 .card:nth-child(1)
 {
     position: absolute;
@@ -27,8 +27,7 @@ margin: 0;
    width: 20rem;
    background-color: crimson;
    padding: 0;
-   
-   
+   border-radius: 10px;
    align-items: flex-end;
 
 }
@@ -41,32 +40,33 @@ margin: 0;
    width: 20rem;
    background-color: crimson;
    padding: 0;
+   border-radius: 10px;
    
    
    align-items: flex-end;
 
 }
 .img,img {
-    width: 20rem;
-    height: 30rem;
+    width: 100%;
+    height: 100%;
     position: absolute;
     display:flex;
     transition: 0.4s;
+    border-radius: 10px;
 
 }
-img:hover{
-    height: 25rem;
-transition: 0.4s;
-border-bottom: 1px solid white ;
+h1{
+    color: white;  
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
-img::before{
-    transition: 0.4s;
-}
+
 h3{
     display: inline-flex;
     position: absolute;
     top: 85%;
-    left: 35%;
+    left: 20%;
     color: white;  
     visibility: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -77,30 +77,29 @@ background: linear-gradient(-45deg, rgba(255,255,255,1) 50%, rgba(220, 20, 60) 5
 span{
  transform: rotate(45deg);
     padding: 10px;
-    background: rgb(220,20,60);
-    background: linear-gradient(-45deg, rgba(255,255,255,1,0) 50%, rgba(220, 20, 60,1) 50%);
 
     position: absolute;
     display: inline-flex;
-    top: 81.2%;
-    left: 50%;
+    top: 81%;
+    left: 3%;
     visibility: hidden;
    
 }
-span:hover{
-     background: rgb(255,255,255);
-    background: linear-gradient(-45deg, rgba(255,255,255,1,0) 50%, rgba(220, 20, 60,1) 50%);
 
-}
-.card :hover span{
+.card:hover  span {
+    visibility: visible;
+    transition: 0.8s;
    rotate: 90deg;
-        background: rgb(255,255,255);
+        background: white;
         background: linear-gradient(-45deg, rgba(255,255,255,1,0) 50%, rgba(220, 20, 60,1) 50%);
    
 }
-.card:hover  h3 ,span{
+.card:hover  h3 {
     transition: 0.8s;
     visibility: visible;
-   
-   
+}
+.card:hover img{
+    height: 83%;
+    transition: 0.4s;
+    border-bottom: 1px solid white ;
 }
