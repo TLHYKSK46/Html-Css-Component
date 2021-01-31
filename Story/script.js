@@ -1,9 +1,9 @@
 const carousel = document.querySelector(".carousel");
 const nextButton = document.querySelector(".right-btn");
 const previousButton = document.querySelector(".left-btn");
-const buttons=document.querySelectorAll('.story-status');
-const overlay=document.querySelector('.overlay');
-const overlayImage=document.querySelector('.overlay-inner img');
+const buttons = document.querySelectorAll(".story-status");
+const overlay = document.querySelector(".overlay");
+const overlayImage = document.querySelector(".overlay-inner img");
 
 const slides = [...carousel.children];
 let slideWidth = slides[0].getBoundingClientRect().width;
@@ -24,7 +24,7 @@ previousButton.addEventListener("click", function () {
   const currentSlide = carousel.querySelector(".active");
   const previousSlide = currentSlide.previousElementSibling;
   moveToSlide(carousel, currentSlide, previousSlide);
-  hideButton( previousSlide, slides);
+  hideButton(previousSlide, slides);
 });
 function moveToSlide(carousel, currentSlide, targetSlide) {
   const position = targetSlide.style.left;
@@ -57,15 +57,13 @@ function findIndex(item, items) {
 
 function open(e) {
   overlay.style.display = "grid";
-    overlay.classList.add('open');
-    const src =e.currentTarget.querySelector('img').src;
-    overlayImage.src=src;
-  
+  overlay.classList.add("open");
+  const src = e.currentTarget.querySelector("img").src;
+  overlayImage.src = src;
 }
 function close() {
-    overlay.classList.remove('open');
-    overlay.style.display='none';
-
+  overlay.classList.remove("open");
+  overlay.style.display = "none";
 }
-buttons.forEach(button =>button.addEventListener('click',open));
-overlay.addEventListener('click', close); 
+buttons.forEach((button) => button.addEventListener("click", open));
+overlay.addEventListener("click", close);

@@ -42,7 +42,7 @@ h1 {
   margin: 0;
   list-style: none;
 
-transition: 1s ease ;
+  transition: 1s ease;
 }
 .slide {
   padding: 0;
@@ -57,20 +57,19 @@ transition: 1s ease ;
   text-align: center;
   transition: 400ms ease;
 }
-.story-status:hover{
-transform: scale(1.1);
-
+.story-status:hover {
+  transform: scale(1.1);
 }
 
 .story-status img {
   width: 135px;
   height: 135px;
-  
+
   user-select: none;
 }
-.story-status p{
-    color: white;
-    margin-top: 5px;
+.story-status p {
+  color: white;
+  margin-top: 5px;
 }
 .left-btn {
   left: 20px;
@@ -96,42 +95,36 @@ transform: scale(1.1);
   );
 }
 /* .story-status img.story */
-.overlay{
+.overlay {
   display: none;
-  box-shadow:10px 5px 5px #dc2743;
+  box-shadow: 10px 5px 5px #dc2743;
 }
-.overlay.open{
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    
+.overlay.open {
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
-.overlay-inner{
-    background: white;
-    width: 200px;
-    padding: 10%;
-    position: absolute;
-    opacity: 1;
-    align-items: center;
+.overlay-inner {
+  background: white;
+  width: 200px;
+  padding: 10%;
+  position: absolute;
+  opacity: 1;
+  align-items: center;
 }
-.close{
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    background: none;
-    outline: 0;
-    color: #474545;
-    border: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  
-    
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: none;
+  outline: 0;
+  color: #474545;
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.close:hover{
-    color: #d1a39e;
-    opacity: 0.5;
+.close:hover {
+  color: #d1a39e;
+  opacity: 0.5;
 }
-
-
-
